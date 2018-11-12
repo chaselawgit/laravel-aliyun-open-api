@@ -7,12 +7,12 @@ class AliLiveServiceProvider extends LaravelServiceProvider {
 
     public function boot(){
         $this->publishes([
-            __DIR__.'/../Config/ali-live.php' => config_path('ali-live.php'),
+            __DIR__.'/../Config/ali-open-api.php' => config_path('ali-open-api.php'),
         ]);
     }
     public function register(){
         $this->app->singleton(AliLiveService::class,function($app){
-            $config = config('ali-live');
+            $config = config('ali-open-api');
             return new AliLiveService(
                 $config['app_name']
                 , $config['center_push_host']
