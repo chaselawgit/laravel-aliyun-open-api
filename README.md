@@ -5,7 +5,7 @@
 
 * 安装组件
 ~~~
-composer require chaselawgit/AliyunOpenApi
+composer require chaselawgit/laravel-aliyun-open-api
 ~~~
 
 * 发布资源
